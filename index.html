@@ -397,7 +397,7 @@
        * Instead use one of the strategies described in
        * https://stripe.com/docs/payments/checkout/fulfill-orders
        */
-      successUrl: 'https://effi-tech.github.io/effitech_thanks',
+      successUrl: 'https://effi-tech.github.io/effitech_thanks/?utm_source=' + location.search.substring(1) + '&utm_medium=sns&utm_campaign=seminar_ma_btob&utm_content=text_A',
       cancelUrl: 'https://effi-tech.github.io/nomadanime',
     })
     .then(function (result) {
